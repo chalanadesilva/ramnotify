@@ -1,6 +1,9 @@
 # ramnotify
 An app that notifys the user when too much RAM is being used.
 
+## Reqirements
+Reqires python, and pip. install python from (python.org) and pip by running `python -m ensurepip --upgrade`\(windows\) or `python3 -m ensurepip --upgrade`\(macos and GNU/Linux\).
+
 ## Installation
 download the .zip file and then unzip.
 
