@@ -5,19 +5,17 @@ AUTOSTART_DIR="$HOME/.config/autostart"
 mkdir -p "$AUTOSTART_DIR"
 
 DESKTOP_FILE="$AUTOSTART_DIR/run_script.desktop"
-SCRIPT_PATH="$HOME/$PWD/run.sh"
+SCRIPT_PATH="$PWD/run.sh"
 
+chmod +x $SCRIPT_PATH
 cat > "$DESKTOP_FILE" << EOL
 [Desktop Entry]
-Type=Application
+Hidden=false
+TryExec=$SCRIPT_PATH
 Exec=$SCRIPT_PATH
-Hidden=true
-NoDisplay=true
-X-GNOME-Autostart-enabled=true
-Name=Run Ramnotify
-Comment=Run run.sh on graphical login
 EOL
 
+chmod +x $DESKTOP_FILE
 # make virtual enviroment
 VENV_DIR="ramnotify"
 python3 -m venv $VENV_DIR

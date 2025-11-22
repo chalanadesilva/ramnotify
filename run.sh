@@ -1,5 +1,5 @@
 #!/bin/bash
 if [ -d "ramnotify" ]; then
-    source venv/bin/activate
+    source ramnotify/bin/activate
 fi
-python myscript.py
+python ramnotify.py

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # make run.sh run on login
-SCRIPT_PATH="$HOME/$PWD/run.sh"
+SCRIPT_PATH="$PWD/run.sh"
 chmod +x "$SCRIPT_PATH"
 osascript -e "tell application \"System Events\" to make login item at end with properties {path:\"$SCRIPT_PATH\", hidden:false}"
 
