@@ -10,9 +10,18 @@ SCRIPT_PATH="$PWD/run.sh"
 chmod +x $SCRIPT_PATH
 cat > "$DESKTOP_FILE" << EOL
 [Desktop Entry]
-Hidden=false
-TryExec=$SCRIPT_PATH
+Encoding=UTF-8
+Version=0.9.4
+Type=Application
+Name=start ramnotify
+Comment=
 Exec=$SCRIPT_PATH
+OnlyShowIn=XFCE;
+RunHook=0
+StartupNotify=false
+Terminal=false
+Hidden=false
+
 EOL
 
 chmod +x $DESKTOP_FILE
