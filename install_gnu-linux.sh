@@ -16,7 +16,6 @@ Type=Application
 Name=start ramnotify
 Comment=
 Exec=$SCRIPT_PATH
-OnlyShowIn=XFCE;
 RunHook=0
 StartupNotify=false
 Terminal=false
